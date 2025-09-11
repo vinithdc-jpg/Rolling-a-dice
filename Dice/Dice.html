@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h1>Dice Roller</h1>
+          <p class="subtitle">Roll any number of d6 dice. Press <span class="kbd">Enter</span> to roll.</p>
+        </div>
+
+        <div class="controls">
+          <div>
+            <label for="dice-count">Number of dice</label>
+            <input id="dice-count" type="number" min="1" max="100" value="1" />
+          </div>
+          <div class="actions">
+            <button id="roll">Roll</button>
+          </div>
+        </div>
+
+        <div class="results" id="results" aria-live="polite">
+          <div class="muted">No rolls yet.</div>
+        </div>
+      </div>
+
+      <div class="history" id="history"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
